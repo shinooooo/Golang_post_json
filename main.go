@@ -22,7 +22,7 @@ func loadDestination() (url string) {
 }
 
 // send http request
-func post(userin string, url string) error {
+func post(userin, url string) error {
 	jsonStr := `{"content":"` + userin + `"}`
 	req, err := http.NewRequest(
 		"POST",
